@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif; /* Utilisez la police de caractères appropriée pour l'entreprise */
+  margin: 0; /* Réinitialisez les marges du corps */
+  padding: 0; /* Réinitialisez les rembourrages du corps */
 }
 
-.App-logo {
+.container {
+  text-align: center; /* Centrer le contenu */
+}
+
+.logo {
   height: 40vmin;
-  pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* Animation du logo */
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Appliquer l'animation au logo */
+.logo {
+  animation: spin infinite 20s linear;
+}
+
+.header {
+  background-color: #282c34; /* Couleur de fond */
+  min-height: 100vh; /* Hauteur minimale de l'en-tête */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fb61e6; /* Couleur du texte */
+}
+
+.link {
+  color: #fb61e6; /* Couleur des liens */
 }

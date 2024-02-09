@@ -1,13 +1,10 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0; /* Réinitialisez les marges du corps */
+  font-family: Arial, sans-serif; /* Utilisez la police de caractères appropriée pour l'entreprise */
+  -webkit-font-smoothing: antialiased; /* Lissage des polices pour les navigateurs WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Lissage des polices pour les navigateurs Firefox sur macOS */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Courier New', Courier, monospace; /* Utilisez une police de code appropriée */
 }
