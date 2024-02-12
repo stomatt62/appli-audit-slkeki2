@@ -1,43 +1,54 @@
 body {
-  font-family: Arial, sans-serif; /* Utilisez la police de caractères appropriée pour l'entreprise */
-  margin: 0; /* Réinitialisez les marges du corps */
-  padding: 0; /* Réinitialisez les rembourrages du corps */
-}
-
-.container {
-  text-align: center; /* Centrer le contenu */
-}
-
-.logo {
-  height: 40vmin;
-}
-
-/* Animation du logo */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background:
+          url(https://sophie-lebreuilly.com/wp-content/uploads/VIENNOISERIE_022.svg) no-repeat left top, /* Image de gauche */
+          url(https://sophie-lebreuilly.com/wp-content/uploads/VIENNOISERIE_022.svg) no-repeat right top; /* Image de droite */
+  background-size: 50% 100%; /* Ajuste la taille de l'image pour qu'elle couvre la moitié de la largeur et toute la hauteur */
+  @media only screen and (max-width: 768px) {
+    /* Styles spécifiques pour les tablettes */
+    .app-container {
+      /* Ajoutez des styles appropriés pour l'affichage sur tablette */
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+/* App.css */
+
+.app-container {
+  text-align: center;
+  padding: 20%
+
 }
 
-/* Appliquer l'animation au logo */
-.logo {
-  animation: spin infinite 20s linear;
+.app-title {
+  font-size: 24%;
+  color: #333;
+
 }
 
-.header {
-  background-color: #282c34; /* Couleur de fond */
-  min-height: 100vh; /* Hauteur minimale de l'en-tête */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #fb61e6; /* Couleur du texte */
+.button-container {
+  margin-top: 20%;
+
 }
 
-.link {
-  color: #fb61e6; /* Couleur des liens */
+.button {
+  background-color: #e73c51;
+  color: #fff;
+  border: none;
+  padding: 10% 20%;
+  margin-right: 10%;
+  font-size: 16%;
+  cursor: pointer;
+  border-radius: 5%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
 }
+
+.button:hover {
+  background-color: #e73c51;
+
+}
+
