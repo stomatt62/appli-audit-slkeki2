@@ -5,13 +5,22 @@ body {
   background:
           url(https://sophie-lebreuilly.com/wp-content/uploads/VIENNOISERIE_022.svg) no-repeat left top, /* Image de gauche */
           url(https://sophie-lebreuilly.com/wp-content/uploads/VIENNOISERIE_022.svg) no-repeat right top; /* Image de droite */
-  background-size: 50% 100%; /* Ajuste la taille de l'image pour qu'elle couvre la moitié de la largeur et toute la hauteur */
+  background-size: 185.5% 250%; /* Ajuste la taille de l'image pour qu'elle couvre la moitié de la largeur et toute la hauteur */
   @media only screen and (max-width: 768px) {
     /* Styles spécifiques pour les tablettes */
     .app-container {
       /* Ajoutez des styles appropriés pour l'affichage sur tablette */
     }
   }
+
+}
+
+.logo-container{
+  background:
+url(https://sophie-lebreuilly.com/wp-content/uploads/sophie-lebreuilly-logo2.svg);
+  margin: 0;
+  padding: 0;
+  background-size: 185.59% 250%;
 
 }
 /* App.css */
@@ -23,9 +32,22 @@ body {
 }
 
 .app-title {
-  font-size: 24%;
+  font-size: 250%;
   color: #333;
 
+}
+.rectangle-container {
+  width: 50%; /* Largeur de votre rectangle */
+  height: 500px; /* Hauteur de votre rectangle */
+  background-color: #c4b798; /* Couleur de fond du rectangle */
+  border: 10px solid #e73c51; /* Bordure du rectangle */
+  border-radius: 5px; /* Rayon des coins du rectangle */
+  display: flex;
+  justify-content: center; /* Centre horizontalement le contenu à l'intérieur du rectangle */
+  align-items: center; /* Centre verticalement le contenu à l'intérieur du rectangle */
+  /* Centre le rectangle horizontalement sur la page */
+  /* Marge vers le haut pour espacement */
+  margin: 50px auto 0;
 }
 
 .button-container {
@@ -51,4 +73,24 @@ body {
   background-color: #e73c51;
 
 }
+
+/* Définissez les styles pour les boutons */
+.custom-button {
+  background-color: #e73c51; /* Couleur de fond */
+  border: none; /* Supprime les bordures */
+  color: #ffffff; /* Couleur du texte */
+  padding: 15px 32px; /* Espacement intérieur */
+  text-align: center; /* Alignement du texte */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px; /* Ajoute un peu de courbure aux coins */
+}
+
+.custom-button:hover {
+  background-color: #010002; /* Change la couleur au survol */
+}
+
 
