@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import PageEtaples from './PageEtaples';
 import PageWimereux from './PageWimereux';
 import './App.css'; // Importez votre fichier CSS pour les styles personnalisés
-import logosophie from './sophie-lebreuilly-logo.svg'; // Importez votre image
+//import logoSophie from './src/sophie-lebreuilly-logo.jpg'; // Importez votre image
+
 function App() {
     return (
         <Router>
@@ -24,29 +25,16 @@ function App() {
                     </div>
                 </div>
                 <Routes>
-                    <Route path="/etaples" element={<PageEtaples/>}/>
-                    <Route path="/wimereux" element={<PageWimereux/>}/>
+                    <Route path="/etaples" element={<PageEtaples />} />
+                    <Route path="/wimereux" element={<PageWimereux />} />
                 </Routes>
-            </div>
-        </Router>
-    );
-}
-function logo () {
-    return(
-        <Router>
-            <div className="logo-container">
-                <h2>Logo</h2>
-                <img src={logosophie} alt="logo"/>
-
 
             </div>
         </Router>
     );
-
-
 }
 
+export default App;
 
-export {App, logo};
 
 

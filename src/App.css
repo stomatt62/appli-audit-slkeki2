@@ -1,11 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 15%;
   padding: 0;
   background:
+          url(https://sophie-lebreuilly.com/wp-content/uploads/sophie-lebreuilly-logo2.svg) no-repeat  center,
           url(https://sophie-lebreuilly.com/wp-content/uploads/VIENNOISERIE_022.svg) no-repeat left top, /* Image de gauche */
           url(https://sophie-lebreuilly.com/wp-content/uploads/VIENNOISERIE_022.svg) no-repeat right top; /* Image de droite */
-  background-size: 185.5% 250%; /* Ajuste la taille de l'image pour qu'elle couvre la moitié de la largeur et toute la hauteur */
+  background-size: 80% 80%, 185.5% 250%, 185.5% 250%; /* Ajuste la taille de l'image pour qu'elle couvre la moitié de la largeur et toute la hauteur */
+
   @media only screen and (max-width: 768px) {
     /* Styles spécifiques pour les tablettes */
     .app-container {
