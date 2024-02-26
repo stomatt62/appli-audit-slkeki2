@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import PageEtaples from './PageEtaples';
 import PageWimereux from './PageWimereux';
-import './App.css'; // Importez votre fichier CSS pour les styles personnalisés
-//import logoSophie from './src/sophie-lebreuilly-logo.jpg'; // Importez votre image
+import './App.css';
+import Auditencours from "./Auditencours"; // Importez votre fichier CSS pour les styles personnalisés
 
 function App() {
     return (
@@ -27,14 +27,18 @@ function App() {
                 <Routes>
                     <Route path="/etaples" element={<PageEtaples />} />
                     <Route path="/wimereux" element={<PageWimereux />} />
+                    <Route path="/auditencours" element={<Auditencours />} />
+                    <Route path="/auditarchives" element={<Auditarchives />} />
+                    <Route path="/nouvelaudit" element={<Nouvelaudit />} />
+                    <Route path="/App" element={<App />} />
                 </Routes>
-
             </div>
         </Router>
     );
 }
 
 export default App;
+
 
 
 
