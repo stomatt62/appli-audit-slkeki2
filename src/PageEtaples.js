@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
+import './App'
 function PageEtaples() {
     return (
+        <div className="rectangle-container">
         <div>
             <h2>Bienvenue à Etaples</h2>
             <p>Etaples est une charmante ville côtière située dans le nord</p>
@@ -19,10 +21,11 @@ function PageEtaples() {
                 <Link to="/Nouvelaudit">
                     <button className="custom-button">Nouvel audit</button>
                 </Link>
-                <Link to="/App">
+                <Link to="/index">
                     <button className="custom-button">Accueil</button>
                 </Link>
             </div>
+        </div>
         </div>
     );
 }

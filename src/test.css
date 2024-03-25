@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:
+            url(https://sophie-lebreuilly.com/wp-content/uploads/sophie-lebreuilly-logo2.svg) no-repeat center,
+            url(https://sophie-lebreuilly.com/wp-content/uploads/VIENNOISERIE_022.svg) no-repeat left top; /* Image de gauche */
+    background-size: contain, cover; /* Ajuste la taille de l'image pour qu'elle conserve ses proportions */
+}
+
+.logo-container {
+    background: url(https://sophie-lebreuilly.com/wp-content/uploads/sophie-lebreuilly-logo2.svg);
+    margin: 0;
+    padding: 0;
+    background-size: contain; /* Ajuste la taille de l'image pour qu'elle conserve ses proportions */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.app-container {
+    font-size: 150%;
+    text-align: center;
+    padding: 10%;
+}
+
+.app-title {
+    text-align: center;
+    font-size: 250%;
+    color: #333;
+}
+
+.rectangle-container {
+    width: 100%; /* Remplit toute la largeur de l'écran */
+    height: 100vh; /* Hauteur égale à 100% de la hauteur de l'écran */
+    background-color: #c4b697; /* Couleur de fond du rectangle */
+    border: 10px solid #e73c51; /* Bordure du rectangle */
+    border-radius: 20px; /* Rayon des coins du rectangle */
+    display: flex;
+    justify-content: center; /* Centre horizontalement le contenu à l'intérieur du rectangle */
+    align-items: center; /* Centre verticalement le contenu à l'intérieur du rectangle */
+}
+
+.button-container {
+    margin-top: 20%;
+}
+
+.button {
+    background-color: #e73c51;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Ajustez l'espacement des boutons pour les écrans plus petits */
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e73c51;
+}
+
+/* Définissez les styles pour les boutons */
+
+.custom-button {
+    background-color: #e73c51; /* Couleur de fond */
+    border: none; /* Supprime les bordures */
+    color: #ffffff; /* Couleur du texte */
+    padding: 15px 32px; /* Espacement intérieur */
+    text-align: center; /* Alignement du texte */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; /* Ajoute un peu de courbure aux coins */
+}
+
+.custom-button:hover {
+    background-color: #010002; /* Change la couleur au survol */
+}
+
+.audit-options {
+    background-color: #e73c51; /* Couleur de fond */
+    border: none; /* Supprime les bordures */
+    color: #ffffff; /* Couleur du texte */
+    padding: 15px 32px; /* Espacement intérieur */
+    text-align: center; /* Alignement du texte */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Ajoutez des styles pour les tailles d'écran plus petites */
+@media only screen and (max-width: 768px) {
+    .rectangle-container {
+        width: 80%; /* Ajustez la largeur pour les écrans plus petits */
+    }
+
+    .app-container {
+        font-size: 100%; /* Réduisez la taille de la police pour les écrans plus petits */
+    }
+
+    .button {
+        padding: 8px 16px; /* Ajustez l'espacement des boutons pour les écrans plus petits */
+    }
+}
