@@ -12,13 +12,13 @@ function PageEtaples() {
                 côtier.</p>
             <div className="audit-options">
                 {/* Utilisation des composants Link pour rediriger vers les pages */}
-                <Link to="/Auditencours">
+                <Link to="/Auditencours_et">
                     <button className="custom-button">Audit en cours</button>
                 </Link>
-                <Link to="/Auditarchives">
+                <Link to="/Auditarchives_et">
                     <button className="custom-button">Audit archivés</button>
                 </Link>
-                <Link to="/Nouvelaudit">
+                <Link to="/Nouvelaudit_et">
                     <button className="custom-button">Nouvel audit</button>
                 </Link>
                 <Link to="/index">
